@@ -57,7 +57,7 @@ jobs:
         run: make defconfig
 
       - name: SSH connection to Actions
-        uses: actions/debugger-action@master
+        uses: actions/checkout@v2
         if: env.SSH_ACTIONS == 'true'
         
       - name: Make download
